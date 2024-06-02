@@ -68,9 +68,9 @@ The models were evaluated using metrics such as accuracy, precision, recall, and
 
 | Model                | Accuracy | Precision | Recall | F1 Score |
 |----------------------|----------|-----------|--------|----------|
-| Logistic Regression  | 0.770    | 0.844     | 0.776  | 0.809    |
-| XGBoost              | 0.784    | 0.848     | 0.784  | 0.815    |
-| SVM                  | 0.792    | 0.852     | 0.832  | 0.842    |
+| Logistic Regression  | 77%      | 84%       | 78%    | 81%      |
+| XGBoost              | 78%      | 84%       | 78%    | 81%      |
+| SVM                  | 80%      | 84%       | 83%    | 84%      |
 
 ## Conclusion
 Support Vector Machine (SVM) emerged as the most accurate model for detecting heart disease, showcasing superior performance in metrics such as recall and F1 score. While XGBoost and Logistic Regression also demonstrated competitive performance, SVM's precision and recall make it a robust choice for early and accurate heart disease detection. Future work could involve fine-tuning the parameters and exploring other classification techniques to further enhance model performance.
@@ -82,5 +82,3 @@ Support Vector Machine (SVM) emerged as the most accurate model for detecting he
 4. Ayatollahi, H., Gholamhosseini, L., & Salehi, M. (2019). Predicting coronary artery disease: A comparison between two data mining algorithms. BMC Public Health, 19(1), 448–448. [DOI](https://doi.org/10.1186/s12889-019-6721-5)
 5. Nashif, S., Raihan, M.R., Islam, M.R., & Imam, M.H. (2018). Heart Disease Detection by Using Machine Learning Algorithms and a Real-Time Cardiovascular Health Monitoring System. World Journal of Engineering and Technology, 6, 854-873. [Link](https://www.scirp.org/journal/paperinformation.aspx?paperid=88650)
 6. Liu, X., Wang, X., Su, Q., Zhang, M., Zhu, Y., Wang, Q., & Wang, Q. (2017). A Hybrid Classification System for Heart Disease Diagnosis Based on the RFRS Method. Computational and Mathematical Methods in Medicine, 2017, 8272091–11. [DOI](https://doi.org/10.1155/2017/8272091)
-
-
