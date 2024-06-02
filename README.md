@@ -1,10 +1,22 @@
 # Heart Disease Detection Using Classification Methods
 
 ## Abstract
-Heart diseases remain a prominent cause of death worldwide. This research addresses the urgent necessity for solutions that can identify individuals at risk of heart disease promptly and precisely. Leveraging data visualization techniques and machine learning models, a reliable and efficient tool will be developed to assist healthcare professionals in this task. Beginning with detailed Exploratory Data Analysis (EDA), visualizations will be employed to unravel complex patterns within the Cleveland Heart Disease dataset. Subsequently, multiple classification algorithms will be trained and evaluated using various metrics. The objective is to identify the most effective method for accurately detecting heart disease. The appropriate classification model will enable timely diagnosis and treatment of heart diseases.
+Heart diseases remain a prominent cause of death worldwide. This project addresses the necessity for solutions that can identify individuals at risk of heart disease promptly and precisely. Leveraging data visualization techniques and machine learning models, a reliable and efficient tool was developed to assist healthcare professionals in this task. Beginning with detailed Exploratory Data Analysis (EDA), visualizations were employed to unravel complex patterns within the Cleveland Heart Disease dataset. Subsequently, multiple classification algorithms were trained and evaluated using various metrics. The objective is to identify the most effective method for accurately detecting heart disease. The appropriate classification model will enable timely diagnosis and treatment of heart diseases.
 
-## Keywords
-Classification, Logistic Regression, XGBoost, SVM, Heart Disease, Visualization, Accuracy, Precision, Recall
+## Steps to Simulate the Project:
+
+1. Open the jupyter notebook, named "Heart_Disease_Detection.ipynb".
+2. Make sure to download the dataset from https://doi.org/10.24432/C52P4X and save as "heart_disease_uci.csv" (Also uploaded in this repository).
+3. Change the path location of the data file in the jupyter notebook.
+4. Before running the code make sure to install all the prerequisites as mentioned below.
+5. Run all the code segments in the jupyter notebook to preprocess, visualize and transform the data. Finally, run the code segments to train the classification models and evaluate their performance.
+
+## Prerequisites
+
+Make sure you have the following installed:
+
+- Jupyter Notebook with Python-3 kernel
+- Required libraries (e.g. 'numpy', 'pandas', 'scikit-learn', 'seaborn', 'matplotlib', 'xgboost')
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -23,12 +35,12 @@ Classification, Logistic Regression, XGBoost, SVM, Heart Disease, Visualization,
 Cardiovascular diseases, particularly heart disease, stand out as a leading cause of death across the world. Heart disease often progresses silently, with symptoms appearing only in advanced stages. Early detection and accurate risk assessment are crucial in preventing and managing heart diseases. This research aims to use data visualization techniques and machine learning models to develop a reliable and efficient tool that can assist healthcare professionals in identifying individuals at risk of heart disease, ultimately leading to improved patient outcomes and reduced healthcare costs.
 
 ## Previous Work
-In medical science, various machine learning algorithms are actively utilized for data analysis and advancement. Recent research in healthcare has showcased instances of machine learning utilization, such as identifying COVID-19 through X-rays, detecting tumors via MRIs, and predicting cardiac issues. Studies have employed algorithms like Random Forest, Decision Tree Classifier, Multilayer Perceptron, and XGBoost to predict cardiovascular diseases, demonstrating the efficacy of these models in clinical settings  .
+In medical science, various machine learning algorithms are actively utilized for data analysis and advancement. Recent research in healthcare has showcased instances of machine learning utilization, such as identifying COVID-19 through X-rays, detecting tumors via MRIs, and predicting cardiac issues. Studies have employed algorithms like Random Forest, Decision Tree Classifier, Multilayer Perceptron, and XGBoost to predict cardiovascular diseases, demonstrating the efficacy of these models in clinical settings.
 
 ## Methodology
 
 ### Dataset
-The Cleveland Heart Disease dataset, available in the UCI Machine Learning Repository, was used for this research. The dataset consists of 76 attributes, but we focused on a subset of 13 features used in previous studies. These features include age, sex, chest pain type (cp), resting blood pressure (trestbps), serum cholesterol (chol), fasting blood sugar (fbs), maximum heart rate achieved (thalach), exercise-induced angina (exang), ST depression (oldpeak), slope of the peak exercise ST segment (slope), number of major vessels (ca), and types of defect (thal). The target variable, `disease_present`, was mapped to binary values indicating the absence or presence of heart disease.
+The Cleveland Heart Disease dataset, available in the UCI Machine Learning Repository, was used for this research. The dataset consists of 76 attributes, but we focused on a subset of 13 features used in previous studies. These features include age, sex, chest pain type (cp), resting blood pressure (trestbps), serum cholesterol (chol), fasting blood sugar (fbs), maximum heart rate achieved (thalach), exercise-induced angina (exang), ST depression (oldpeak), slope of the peak exercise (slope), number of major vessels (ca), and types of defect (thal). The target variable, `disease_present`, was mapped to binary values indicating the absence or presence of heart disease.
 
 ### Computational Resources and Tools Used
 The project was implemented using Python within a Jupyter Notebook environment, utilizing essential libraries such as Matplotlib, Seaborn, Scikit-learn, NumPy, and Pandas. No extra computational resources were required beyond standard CPU cores.
@@ -54,9 +66,11 @@ Logistic Regression is a statistical method used for binary classification probl
 ## Results
 The models were evaluated using metrics such as accuracy, precision, recall, and F1 score. SVM demonstrated the highest accuracy at 80%, followed by XGBoost at 78%, and Logistic Regression at 77%. SVM's higher recall (83%) suggests its effectiveness in capturing individuals with heart disease. Precision was consistent across models at 84%, resulting in fewer false positives. The F1 score for SVM was 84%, indicating a good balance between capturing disease cases and minimizing false positives.
 
-![Accuracy of Classifiers](path/to/accuracy_plot.png)
-
-The accuracy of the classification models is visualized in the bar chart above, highlighting SVM's superior performance.
+| Model                | Accuracy | Precision | Recall | F1 Score |
+|----------------------|----------|-----------|--------|----------|
+| Logistic Regression  | 0.770    | 0.844     | 0.776  | 0.809    |
+| XGBoost              | 0.784    | 0.848     | 0.784  | 0.815    |
+| SVM                  | 0.792    | 0.852     | 0.832  | 0.842    |
 
 ## Conclusion
 Support Vector Machine (SVM) emerged as the most accurate model for detecting heart disease, showcasing superior performance in metrics such as recall and F1 score. While XGBoost and Logistic Regression also demonstrated competitive performance, SVM's precision and recall make it a robust choice for early and accurate heart disease detection. Future work could involve fine-tuning the parameters and exploring other classification techniques to further enhance model performance.
@@ -68,3 +82,5 @@ Support Vector Machine (SVM) emerged as the most accurate model for detecting he
 4. Ayatollahi, H., Gholamhosseini, L., & Salehi, M. (2019). Predicting coronary artery disease: A comparison between two data mining algorithms. BMC Public Health, 19(1), 448–448. [DOI](https://doi.org/10.1186/s12889-019-6721-5)
 5. Nashif, S., Raihan, M.R., Islam, M.R., & Imam, M.H. (2018). Heart Disease Detection by Using Machine Learning Algorithms and a Real-Time Cardiovascular Health Monitoring System. World Journal of Engineering and Technology, 6, 854-873. [Link](https://www.scirp.org/journal/paperinformation.aspx?paperid=88650)
 6. Liu, X., Wang, X., Su, Q., Zhang, M., Zhu, Y., Wang, Q., & Wang, Q. (2017). A Hybrid Classification System for Heart Disease Diagnosis Based on the RFRS Method. Computational and Mathematical Methods in Medicine, 2017, 8272091–11. [DOI](https://doi.org/10.1155/2017/8272091)
+
+
