@@ -73,7 +73,7 @@ The models were evaluated using metrics such as accuracy, precision, recall, and
 | SVM                  | 80%      | 84%       | 83%    | 84%      |
 
 ## Conclusion
-Support Vector Machine (SVM) emerged as the most accurate model for detecting heart disease, showcasing superior performance in metrics such as recall and F1 score. While XGBoost and Logistic Regression also demonstrated competitive performance, SVM's precision and recall make it a robust choice for early and accurate heart disease detection. Future work could involve fine-tuning the parameters and exploring other classification techniques to further enhance model performance.
+Support Vector Machine (SVM) emerged as the most accurate model for detecting heart disease, showcasing superior performance in metrics such as recall and F1 score. While XGBoost and Logistic Regression also demonstrated competitive performance, SVM's precision and recall make it a robust choice for early and accurate heart disease detection. Future work could involve fine-tuning the parameters and exploring other classification techniques to further enhance model performance
 
 ## References
 1. Pavlova, A. I. (2023). Application of Machine Learning Algorithms for Heart Disease Prediction. Siberian Journal of Life Sciences and Agriculture, 15(3), 475-496. [DOI](https://doi.org/10.12731/2658-6649-2023-15-3-475-496)
